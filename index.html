@@ -1,1 +1,58 @@
-<!DOCTYPE html>\n<html>\n<head>\n    <title>Interest Calculator</title>\n</head>\n<body>\n    <h1>Welcome to the Interest Calculator</h1>\n    <p>&copy; 2026 Rabii Benrioui. All rights reserved.</p>\n    <!-- Other content -->\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Interest Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut-icon icon" href="https://cdn-icons-png.flaticon.com/512/18559/18559363.png ">
+    <script src="https://kit.fontawesome.com/6f64ff25ce.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fancy Interest Calculator</h1>
+
+        <div class="calculator">
+            <form>
+
+                <div class="input-holder">
+                    <label for="amount">Principal Amount: </label>
+                    <input type="number" name="amount" id="amount">
+                </div>
+
+                <div class="input-holder">
+                    <label for="interest">Interest Rate: </label>
+                    <input type="number" name="interest" id="interestRate">
+                </div>
+
+                <div class="input-holder">
+                    <label for="years">Years: </label>
+                    <input type="number" name="years" id="years">
+                </div>
+
+                <div class="input-holder">
+                    <button type="button" onclick="calculate()">Submit</button>
+                </div>
+
+                <div class="total-amount">
+                    <p id="total">Total: <span id="total-amount"></span></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div id="social-media">
+            <a href="https://www.linkedin.com/in/rabiibenrioui/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://github.com/rabiibenrioui/" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+        </div>
+
+        <p>&copy; 2026 Rabii Benrioui. All rights reserved.</p>
+    </footer>
+</body>
+</html>
